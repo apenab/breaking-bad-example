@@ -6,7 +6,7 @@ export const queryClient = new QueryClient({
     queries: {
       queryFn: async ({ queryKey }) => {
         const { data } = await axios.get(
-          `https://www.breakingbadapi.com/api${queryKey[0]}`
+          `https://www.breakingbadapi.com/api/${queryKey[0]}`
         );
         return data;
       },
