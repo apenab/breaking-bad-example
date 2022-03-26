@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 
-type CharacterParams = {
+type CharacterDetailsParams = {
   characterId: string;
 };
 
-export function Character() {
-  const params = useParams<CharacterParams>();
+export function CharacterDetails() {
+  const params = useParams<CharacterDetailsParams>();
   return <h1>Charter ID: {params.characterId}</h1>;
 }

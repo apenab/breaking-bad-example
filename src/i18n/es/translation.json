@@ -1,5 +1,10 @@
 {
+  "error": "error",
   "nav": {
-    "title": "Breaking Bad"
+    "title": "personajes de breaking bad"
+  },
+  "characters": {
+    "title": "personajes",
+    "error": "tuvimos un error al cargar los personajes"
   }
 }

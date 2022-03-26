@@ -1,5 +1,10 @@
 {
+  "error": "error",
   "nav": {
-    "title": "Breaking Bad"
+    "title": "breaking bad characters"
+  },
+  "characters": {
+    "title": "characters",
+    "error": "we had a problem loading the characters"
   }
 }

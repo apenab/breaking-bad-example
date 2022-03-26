@@ -7,7 +7,7 @@ export function NavBar() {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          {t("nav.title")}
+          {t("nav.title").toUpperCase()}
         </Typography>
       </Toolbar>
     </AppBar>

@@ -1,16 +1,21 @@
 import { Routes, Route } from "react-router-dom";
 
-import { Character, Characters } from "./routes";
-import { NavBar } from "./components";
+import { CharacterDetails, Characters } from "./routes";
+import { AppContainer, NavBar } from "./components";
 
 function App() {
   return (
     <>
       <NavBar />
-      <Routes>
-        <Route path="/characters/" element={<Characters />} />
-        <Route path="/characters/:characterId" element={<Character />} />
-      </Routes>
+      <AppContainer>
+        <Routes>
+          <Route path="/characters/" element={<Characters />} />
+          <Route
+            path="/characters/:characterId"
+            element={<CharacterDetails />}
+          />
+        </Routes>
+      </AppContainer>
     </>
   );
 }

@@ -10,6 +10,7 @@ export const queryClient = new QueryClient({
         );
         return data;
       },
+      refetchOnWindowFocus: false,
     },
   },
 });
