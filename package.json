@@ -52,7 +52,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://apenab.github.io/breaking-bad-example",
   "devDependencies": {
     "gh-pages": "^3.2.3"
   }
