@@ -8,7 +8,6 @@ import { ThemeProvider } from "@mui/material/styles";
 import App from "./App";
 import { queryClient } from "./query";
 import reportWebVitals from "./reportWebVitals";
-import { AppFallback } from "./components";
 import theme from "./theme";
 
 // import i18n (needs to be bundled ;))
@@ -21,9 +20,7 @@ ReactDOM.render(
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <BrowserRouter>
-          <React.Suspense fallback={<AppFallback />}>
-            <App />
-          </React.Suspense>
+          <App />
         </BrowserRouter>
       </ThemeProvider>
     </QueryClientProvider>
