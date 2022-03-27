@@ -6,5 +6,8 @@
   "characters": {
     "title": "characters",
     "error": "we had a problem loading the characters"
+  },
+  "character-details": {
+    "error": "we had a problem loading the character details"
   }
 }

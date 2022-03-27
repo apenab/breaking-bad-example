@@ -1,4 +1,4 @@
-export interface CharacterInterface {
+export interface CharacterListItemInterface {
   char_id: number;
   name: string;
   birthday: string;
@@ -10,6 +10,20 @@ export interface CharacterInterface {
   portrayed: string;
   category: Category;
   better_call_saul_appearance: number[];
+}
+
+export interface CharacterDetailsInterface {
+  char_id: number;
+  name: string;
+  birthday: string;
+  occupation: string[];
+  img: string;
+  status: string;
+  nickname: string;
+  appearance: number[];
+  portrayed: string;
+  category: string;
+  betterCallSaulAppearance: any[];
 }
 
 export enum Category {

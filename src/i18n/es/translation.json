@@ -6,5 +6,8 @@
   "characters": {
     "title": "personajes",
     "error": "tuvimos un error al cargar los personajes"
+  },
+  "character-details": {
+    "error": "tuvimos un error al cargar los detalles del personaje"
   }
 }

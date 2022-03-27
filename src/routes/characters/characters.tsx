@@ -2,7 +2,7 @@ import { Alert, AlertTitle, Box, Grid, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { useQuery } from "react-query";
 
-import { CharacterInterface } from "../../query";
+import { CharacterListItemInterface } from "../../query";
 import { capitalizeFirstLetter } from "../../utils";
 import { Character } from "./index";
 
@@ -14,7 +14,7 @@ export function Characters() {
     isLoading,
     isSuccess,
     isError,
-  } = useQuery<CharacterInterface[]>("characters");
+  } = useQuery<CharacterListItemInterface[]>("characters");
 
   return (
     <div>
