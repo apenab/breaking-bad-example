@@ -7,7 +7,7 @@ type AppContainerProps = {
 export function AppContainer(props: AppContainerProps) {
   return (
     <Box my={2}>
-      <Container maxWidth="sm">{props.children}</Container>;
+      <Container maxWidth="sm">{props.children}</Container>
     </Box>
   );
 }
