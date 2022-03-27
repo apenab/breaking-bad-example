@@ -26,7 +26,7 @@ export function Character(props: CharacterProps) {
         </Skeleton>
       ) : (
         <Typography variant="subtitle2">
-          <Link to={`${props.id}`}>{props.name}</Link>
+          <Link to={`character/${props.id}`}>{props.name}</Link>
         </Typography>
       )}
     </Stack>

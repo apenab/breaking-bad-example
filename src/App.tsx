@@ -9,9 +9,9 @@ function App() {
       <NavBar />
       <AppContainer>
         <Routes>
-          <Route path="/characters/" element={<Characters />} />
+          <Route path="/" element={<Characters />} />
           <Route
-            path="/characters/:characterId"
+            path="/character/:characterId"
             element={<CharacterDetails />}
           />
         </Routes>
