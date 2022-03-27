@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c140dfd9-3973-4475-9eec-c9854e8e34d8/deploy-status)](https://app.netlify.com/sites/breaking-bad-characters7/deploys)
+
 # Breaking Bad characters
 
 Shows the list of Breaking Bad characters and shows the details of a specific character
