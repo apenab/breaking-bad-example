@@ -1,6 +1,6 @@
 import { Stack, Typography } from "@mui/material";
 
-import { useGetRandomQuote } from "query";
+import { useGetRandomQuoteByAuthorName } from "query";
 import { CharacterRandomQuoteLoadingIndicator } from "./index";
 
 type CharacterRandomQuoteProps = {
@@ -9,7 +9,7 @@ type CharacterRandomQuoteProps = {
 };
 
 export function CharacterRandomQuote(props: CharacterRandomQuoteProps) {
-  const { data, status } = useGetRandomQuote(
+  const { data, status } = useGetRandomQuoteByAuthorName(
     {
       characterName: props.name,
     },

@@ -1,8 +1,7 @@
 import { Alert, AlertTitle, Box, Grid, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import { useQuery } from "react-query";
 
-import { CharacterListItemInterface } from "query";
+import { useGetCharacters } from "query";
 import { capitalizeFirstLetter } from "utils";
 import { CharacterListItem } from "./index";
 
@@ -14,7 +13,7 @@ export function CharacterList() {
     isLoading,
     isSuccess,
     isError,
-  } = useQuery<CharacterListItemInterface[]>("characters");
+  } = useGetCharacters();
 
   return (
     <div>

@@ -1,6 +1,6 @@
 import { useQuery, UseQueryOptions } from "react-query";
 
-import { CharacterDetailsInterface } from "query";
+import { CharacterDetailsInterface, QUERY_CONSTANTS } from "query";
 
 type GetCharacterDetailsParamsType = {
   characterId: string;
@@ -11,7 +11,7 @@ export function useGetCharacterDetails(
   queryOptions?: UseQueryOptions<[CharacterDetailsInterface]>
 ) {
   return useQuery<[CharacterDetailsInterface]>(
-    `characters/${params.characterId}`,
+    QUERY_CONSTANTS.CharacterDetails(params.characterId),
     queryOptions
   );
 }
