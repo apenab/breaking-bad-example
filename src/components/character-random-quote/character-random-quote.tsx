@@ -11,7 +11,7 @@ type CharacterRandomQuoteProps = {
 export function CharacterRandomQuote(props: CharacterRandomQuoteProps) {
   const { data, status } = useGetRandomQuoteByAuthorName(
     {
-      characterName: props.name,
+      name: props.name,
     },
     { refetchOnWindowFocus: true }
   );

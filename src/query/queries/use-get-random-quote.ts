@@ -1,10 +1,9 @@
 import { useQuery, UseQueryOptions } from "react-query";
 
-import { Quote } from "query";
-import { QUERY_CONSTANTS } from "query/query-constants";
+import { Quote, QUERY_CONSTANTS } from "query";
 
 type GetRandomQuoteParamsType = {
-  characterName: string;
+  name: string;
 };
 
 export function useGetRandomQuoteByAuthorName(
@@ -12,7 +11,7 @@ export function useGetRandomQuoteByAuthorName(
   queryOptions?: UseQueryOptions<[Quote]>
 ) {
   return useQuery<[Quote]>(
-    QUERY_CONSTANTS.RandomQuoteByAuthorName(params.characterName),
+    QUERY_CONSTANTS.RandomQuoteByAuthorName(params.name),
     queryOptions
   );
 }

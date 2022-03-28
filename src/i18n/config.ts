@@ -14,7 +14,7 @@ export const resources = {
   },
 } as const;
 
-const DETECTION_OPTIONS = {
+const detectionOptions = {
   order: ["localStorage", "navigator"],
   caches: ["localStorage"],
 };
@@ -29,7 +29,7 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     resources,
-    detection: DETECTION_OPTIONS,
+    detection: detectionOptions,
     fallbackLng: "en",
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
