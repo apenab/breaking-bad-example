@@ -2,7 +2,7 @@
 
 # Breaking Bad characters
 
-Shows the list of Breaking Bad characters and shows the details of a specific character
+Show the Breaking Bad characters and details of a specific character
 
 ## Available Scripts
 
