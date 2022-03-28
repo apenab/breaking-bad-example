@@ -22,8 +22,8 @@ export function CharacterRandomQuote(props: CharacterRandomQuoteProps) {
         return null;
       }
       return (
-        <Stack>
-          <Typography align="center" variant="h4" sx={{ fontWeight: 300 }}>
+        <Stack spacing={1}>
+          <Typography align="right" variant="h4" sx={{ fontWeight: 300 }}>
             “{quoteObj.quote}”
           </Typography>
           <Typography align="right" variant="h6">
