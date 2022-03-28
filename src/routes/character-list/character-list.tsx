@@ -4,9 +4,9 @@ import { useQuery } from "react-query";
 
 import { CharacterListItemInterface } from "../../query";
 import { capitalizeFirstLetter } from "../../utils";
-import { Character } from "./index";
+import { CharacterListItem } from "./index";
 
-export function Characters() {
+export function CharacterList() {
   const { t } = useTranslation();
 
   const {
@@ -31,14 +31,14 @@ export function Characters() {
             {isLoading &&
               Array.from(Array(50).keys()).map((number) => (
                 <Grid item xs={2} sm={4} md={4} key={number}>
-                  <Character key={number} loading />
+                  <CharacterListItem key={number} loading />
                 </Grid>
               ))}
 
             {isSuccess &&
               characters.map((character) => (
                 <Grid item xs={2} sm={4} md={4} key={character.char_id}>
-                  <Character
+                  <CharacterListItem
                     id={character.char_id}
                     avatar={character.img}
                     name={character.nickname}

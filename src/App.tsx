@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import { CharacterDetails, Characters } from "./routes";
+import { CharacterDetails, CharacterList } from "./routes";
 import { AppContainer, NavBar } from "./components";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <NavBar />
       <AppContainer>
         <Routes>
-          <Route path="/" element={<Characters />} />
+          <Route path="/" element={<CharacterList />} />
           <Route
             path="/character/:characterId"
             element={<CharacterDetails />}

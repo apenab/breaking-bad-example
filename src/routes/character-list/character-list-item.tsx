@@ -1,14 +1,14 @@
 import { Avatar, Skeleton, Stack, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
-type CharacterProps = {
+type CharacterListItemProps = {
   id?: number;
   avatar?: string;
   name?: string;
   loading?: boolean;
 };
 
-export function Character(props: CharacterProps) {
+export function CharacterListItem(props: CharacterListItemProps) {
   return (
     <Stack direction="row" spacing={1} alignItems="center">
       {props.loading ? (
