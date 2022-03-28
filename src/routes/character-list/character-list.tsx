@@ -2,8 +2,8 @@ import { Alert, AlertTitle, Box, Grid, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { useQuery } from "react-query";
 
-import { CharacterListItemInterface } from "../../query";
-import { capitalizeFirstLetter } from "../../utils";
+import { CharacterListItemInterface } from "query";
+import { capitalizeFirstLetter } from "utils";
 import { CharacterListItem } from "./index";
 
 export function CharacterList() {

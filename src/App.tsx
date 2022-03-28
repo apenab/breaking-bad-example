@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
-import { CharacterDetails, CharacterList } from "./routes";
-import { AppContainer, NavBar } from "./components";
+import { CharacterDetails, CharacterList } from "routes";
+import { AppContainer, NavBar } from "components";
 
 function App() {
   return (

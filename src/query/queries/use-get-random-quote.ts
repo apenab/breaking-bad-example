@@ -1,6 +1,6 @@
 import { useQuery, UseQueryOptions } from "react-query";
 
-import { Quote } from "../definitions";
+import { Quote } from "query";
 
 type GetRandomQuoteParamsType = {
   characterName: string;

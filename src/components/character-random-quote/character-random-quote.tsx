@@ -1,7 +1,7 @@
 import { Stack, Typography } from "@mui/material";
 
+import { useGetRandomQuote } from "query";
 import { CharacterRandomQuoteLoadingIndicator } from "./index";
-import { useGetRandomQuote } from "../../query";
 
 type CharacterRandomQuoteProps = {
   name: string;

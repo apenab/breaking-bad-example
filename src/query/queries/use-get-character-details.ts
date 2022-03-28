@@ -1,6 +1,6 @@
 import { useQuery, UseQueryOptions } from "react-query";
 
-import { CharacterDetailsInterface } from "../definitions";
+import { CharacterDetailsInterface } from "query";
 
 type GetCharacterDetailsParamsType = {
   characterId: string;

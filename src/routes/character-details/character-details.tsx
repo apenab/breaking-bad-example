@@ -10,9 +10,9 @@ import { useParams } from "react-router-dom";
 import CakeIcon from "@mui/icons-material/Cake";
 import { useTranslation } from "react-i18next";
 
-import { useGetCharacterDetails } from "../../query";
-import { CharacterRandomQuote } from "../../components";
-import { capitalizeFirstLetter } from "../../utils";
+import { useGetCharacterDetails } from "query";
+import { CharacterRandomQuote } from "components";
+import { capitalizeFirstLetter } from "utils";
 import { CharacterDetailsLoadingIndicator } from "./character-details-loading-indicator";
 
 type CharacterDetailsParams = {
